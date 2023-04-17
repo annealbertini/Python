@@ -70,6 +70,22 @@ distancia_1 = (x2 - x1) ** 2 + (y2 - y1) ** 2
 distancia_2 = pow(distancia_1, 0.5)
 print(f'{distancia_2:.4f}')
 
+#demonstração de algumas operações matematicas basicas no Python
 
+x = float(input('digite o primeiro numero: '))
+y = float(input('digite o segundo numero: '))
+
+soma = x+y
+subtracao = x-y
+multiplicacao = x*y
+raiz1 = x**(1/2)
+raiz2 = y**(1/2)
+
+
+print('o valor da soma de {} e {} = {}'.format(x,y,soma))
+print('o valor da subtracao de {} e {} = {}'.format(x,y,subtracao))
+print('o valor da multiplicacao de {} e {} = {}'.format(x,y,multiplicacao))
+print(f'o valor da raiz do primeiro numero {x} é {raiz1:.4f}')
+print(f'o valor da raiz do segundo numero {y} é {raiz2:.4f}')
 
 
