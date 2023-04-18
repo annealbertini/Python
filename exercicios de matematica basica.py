@@ -88,4 +88,51 @@ print('o valor da multiplicacao de {} e {} = {}'.format(x,y,multiplicacao))
 print(f'o valor da raiz do primeiro numero {x} é {raiz1:.4f}')
 print(f'o valor da raiz do segundo numero {y} é {raiz2:.4f}')
 
+#calculando a area de circuferencia com o raio
 
+import math as ma
+raio = float(input('digite o raio da circunferencia: '))
+pi = ma.pi
+area = pi * raio**2
+print('a area da circunferencia é: ', round(area,4))
+
+#executando formula de 2° grau no python
+
+import numpy as np
+print ('Vamos calcular a raiz da equacao de 2° grau')
+print()
+a = float(input('digite o valor de a'))
+b = float(input('digite o valor de b'))
+c = float(input('digite o valor de c'))
+
+delta = b**2 - 4*a*c
+
+if delta < 0:
+  print('como delta é menor que zero na equação nao tem raiz no conjunto dos numeros reais')
+else:
+    x1 = (b + np.sqrt(delta))/ (2*a)
+    x2 = (b - np.sqrt(delta))/ (2*a)
+    print(f"As raizes da equacao sao: x1= {x1} e x2 = {x2}")
+    
+#calculadora de impostos com base no salario e na tabela de impostos do governo
+
+salario = float(input('digite seu salario: '))
+
+if salario <= 1903.99:
+   print ('voce esta isento do imposto de renda!')
+
+elif salario >= 1903.99 and salario <= 2826.65:
+  salario_atual = salario -(0.075 * salario) + 142
+  print ('seu salario apos desconto sera de: ', salario_atual)
+  
+elif salario >= 2826.66 and salario <= 3751.05:
+  salario_atual = salario - (0.15 * salario) + 354.80
+  print ('seu salario apos desconto sera de: ', salario_atual)
+  
+elif salario >= 3751.06 and salario <= 4664.68:
+  salario_atual = salario - (0.225 * salario) + 636.13
+  print ('seu salario apos desconto sera de: ', salario_atual)
+  
+elif salario >= 4664.69:
+  salario_atual = salario - (0.275 * salario) + 869.36  
+print ('seu salario apos desconto sera de: ', salario_atual)
