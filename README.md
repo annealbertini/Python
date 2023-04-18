@@ -1,4 +1,3 @@
-Esse repositorio foi criado com o intuito de apresentar alguns dos meus trabalhos realizados em Python. 
+Esse repositorio foi criado com o intuito de apresentar alguns exercicios de matematica basica no Pyhton.
 
-Atualmente programo em Python na faculdade e venho aprofundando o conhecimento com cursos na FIAP e Impacta, estou migrando para a area de dados e venho desenvolvendo alguns portfolios e projetos utilizando machine learning e Python. 
 
