@@ -1,3 +1,12 @@
+
+# calculo para descobrir se o numero informado pelo usuario é par ou impar
+
+n = float(input("Digite o número para verificar se ele é par ou impar "))
+if n%2 == 0:
+  print(f"O número {n} é par")
+else:
+  print(f"O número {n} é impar")
+
 #calculando a area com formula definida 
 
 A,B,C = input().split(" ")
