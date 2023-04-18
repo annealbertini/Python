@@ -1,11 +1,53 @@
+#demonstração de algumas operações matematicas basicas no Python
 
-# calculo para descobrir se o numero informado pelo usuario é par ou impar
+x = float(input('digite o primeiro numero: '))
+y = float(input('digite o segundo numero: '))
+
+soma = x+y
+subtracao = x-y
+multiplicacao = x*y
+raiz1 = x**(1/2)
+raiz2 = y**(1/2)
+
+
+print('o valor da soma de {} e {} = {}'.format(x,y,soma))
+print('o valor da subtracao de {} e {} = {}'.format(x,y,subtracao))
+print('o valor da multiplicacao de {} e {} = {}'.format(x,y,multiplicacao))
+print(f'o valor da raiz do primeiro numero {x} é {raiz1:.4f}')
+print(f'o valor da raiz do segundo numero {y} é {raiz2:.4f}')
+
+
+#calculo para descobrir se o numero informado pelo usuario é par ou impar
 
 n = float(input("Digite o número para verificar se ele é par ou impar "))
 if n%2 == 0:
   print(f"O número {n} é par")
 else:
   print(f"O número {n} é impar")
+  
+#calculando o salario com base em formula definida 
+
+num_funcionario = int(input())
+horas_trabalhadas = int(input())
+valor_hora = float(input())
+
+salario = horas_trabalhadas * valor_hora
+
+print('NUMBER =', num_funcionario)
+print ( f'SALARY = U$ {salario:.2f}')
+
+
+#calculando o salario com bonus em formula definida 
+
+vendendor = input()
+salario_fixo = float(input())
+total_vendas = float(input())
+
+comissao = total_vendas * 0.15
+salario_total = salario_fixo + comissao
+
+print(f'TOTAL = R$ {salario_total:.2f}')
+
 
 #calculando a area com formula definida 
 
@@ -40,23 +82,6 @@ distancia_1 = (x2 - x1) ** 2 + (y2 - y1) ** 2
 distancia_2 = pow(distancia_1, 0.5)
 print(f'{distancia_2:.4f}')
 
-#demonstração de algumas operações matematicas basicas no Python
-
-x = float(input('digite o primeiro numero: '))
-y = float(input('digite o segundo numero: '))
-
-soma = x+y
-subtracao = x-y
-multiplicacao = x*y
-raiz1 = x**(1/2)
-raiz2 = y**(1/2)
-
-
-print('o valor da soma de {} e {} = {}'.format(x,y,soma))
-print('o valor da subtracao de {} e {} = {}'.format(x,y,subtracao))
-print('o valor da multiplicacao de {} e {} = {}'.format(x,y,multiplicacao))
-print(f'o valor da raiz do primeiro numero {x} é {raiz1:.4f}')
-print(f'o valor da raiz do segundo numero {y} é {raiz2:.4f}')
 
 #calculando a area de circuferencia com o raio
 
